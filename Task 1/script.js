@@ -25,7 +25,6 @@ calculate.addEventListener("click", () => {
   const resultList = document.createElement("ul");
   const returnedWeight = weightConverter(Number(enteredWeight.value));
   output.className = "output-style";
-  enteredWeight.value = "";
 
   const poundsItem = document.createElement("li");
   poundsItem.textContent = `Pounds: ${returnedWeight.pounds}`;
