@@ -13,14 +13,15 @@ const enteredWeight = document.querySelector("#search");
 const output = document.querySelector("#output");
 
 const weightConverter = (kilograms) => {
-  const pounds = kilograms * 2.2046;
+  const pounds = (kilograms * 2.2046).toFixed(2);
   const grams = kilograms * 0.001;
-  const ounces = kilograms * 35.274;
+  const ounces = (kilograms * 35.274).toFixed(2);
 
   return { pounds: pounds, grams: grams, ounces: ounces };
 };
 
 calculate.addEventListener("click", () => {
+  output.innerHTML = "";
   const resultList = document.createElement("ul");
   const returnedWeight = weightConverter(Number(enteredWeight.value));
   output.className = "output-style";
