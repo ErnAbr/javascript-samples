@@ -3,8 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 /* Mobile first */
@@ -26,4 +26,26 @@
 .container h1 {
   margin-top: 50px;
   color: #333;
+}
+
+.card-style {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  width: 100%;
+  border: 1px solid black;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.card-style > ul li {
+  list-style: none;
+}
+
+.card-style > h2,
+.card-style > ul {
+  width: 300px;
+}
+.card-style > h2 {
+  align-self: center;
 }
