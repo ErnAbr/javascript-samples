@@ -14,7 +14,7 @@ const output = document.querySelector("#output");
 
 const weightConverter = (kilograms) => {
   const pounds = (kilograms * 2.2046).toFixed(2);
-  const grams = kilograms * 0.001;
+  const grams = kilograms / 0.001;
   const ounces = (kilograms * 35.274).toFixed(2);
 
   return { pounds: pounds, grams: grams, ounces: ounces };
