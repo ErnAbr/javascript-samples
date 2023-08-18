@@ -24,6 +24,7 @@ const getUsers = async () => {
 showUsersButton.addEventListener("click", () => {
   getUsers().then((users) => {
     message.textContent = "";
+    output.textContent = "";
     users.forEach((user) => {
       const card = document.createElement("div");
       const image = document.createElement("img");
