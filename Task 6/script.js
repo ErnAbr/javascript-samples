@@ -23,13 +23,14 @@ const users = [
 const getUserAverageAge = (users) => {
   const averageAge =
     users.reduce((acc, user) => acc + user.age, 0) / users.length;
-
   console.log(`average user age is ${averageAge.toFixed(0)}`);
+  return averageAge;
 };
 
 const getUsersNames = (users) => {
   const userNames = users.map((userName) => userName.name);
   console.log(userNames);
+  return userNames;
 };
 
 getUserAverageAge(users);
